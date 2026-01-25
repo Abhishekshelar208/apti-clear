@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "527235376632",
+    "project_id": "apti-clear",
+    "storage_bucket": "apti-clear.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:527235376632:android:d5ebdf022c5c555c11e20d",
+        "android_client_info": {
+          "package_name": "com.example.apticlear"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9YfQOrSWvX9nYyPlz2EzIpNrTGzpYWRA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
