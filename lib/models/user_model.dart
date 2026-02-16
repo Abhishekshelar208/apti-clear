@@ -3,8 +3,12 @@ class UserModel {
   final String email;
   final String role; // 'student', 'teacher', 'admin'
   final String name;
-  final String? division; // e.g. "A", "B"
-  final String? year; // e.g. "SE", "TE", "BE"
+  final String? division;
+  final String? year;
+  final bool isVolunteer;
+  final double? latitude;
+  final double? longitude;
+  final DateTime? lastSeen;
 
   UserModel({
     required this.uid,
@@ -13,6 +17,10 @@ class UserModel {
     required this.name,
     this.division,
     this.year,
+    this.isVolunteer = false,
+    this.latitude,
+    this.longitude,
+    this.lastSeen,
   });
 
   factory UserModel.fromMap(Map<String, dynamic> data, String documentId) {
@@ -23,6 +31,10 @@ class UserModel {
       name: data['name'] ?? 'Unknown',
       division: data['division'],
       year: data['year'],
+      isVolunteer: data['isVolunteer'] ?? false,
+      latitude: data['latitude']?.toDouble(),
+      longitude: data['longitude']?.toDouble(),
+      lastSeen: data['lastSeen'] != null ? DateTime.parse(data['lastSeen']) : null,
     );
   }
 
@@ -33,6 +45,10 @@ class UserModel {
       'name': name,
       'division': division,
       'year': year,
+      'isVolunteer': isVolunteer,
+      'latitude': latitude,
+      'longitude': longitude,
+      'lastSeen': lastSeen?.toIso8601String(),
     };
   }
 }

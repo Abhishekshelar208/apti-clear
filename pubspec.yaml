@@ -42,12 +42,31 @@ dependencies:
   firebase_database: ^12.0.2
   cloud_firestore: ^6.1.0
   url_launcher: ^6.3.2
+  geolocator: ^14.0.2
+  speech_to_text: ^7.3.0
 
   # State Management & Utils
   provider: ^6.1.2
-  shared_preferences: ^2.5.1
+  shared_preferences: ^2.5.3
   google_fonts: ^6.2.1
   intl: ^0.20.2
+  flutter_animate: ^4.5.2
+  font_awesome_flutter: ^10.9.1
+  vibration: ^3.1.5
+  shake_detector: ^0.1.2
+  flutter_contacts: ^1.1.9+2
+  flutter_ringtone_player: ^4.0.0+4
+  torch_light: ^1.1.0
+  permission_handler: ^12.0.1
+  battery_plus: ^7.0.0
+  camera: ^0.11.2+1
+  path_provider: ^2.1.5
+  path: ^1.9.1
+  video_player: ^2.10.1
+  chewie: ^1.13.0
+  flutter_launcher_icons: ^0.14.4
+  record: ^6.2.0
+  audioplayers: ^6.5.1
   
 dev_dependencies:
   flutter_test:
@@ -101,3 +120,9 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
+
+flutter_launcher_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: 'lib/abhya_soso/assets/images/img.png'
+  min_sdk_android: 23 # android min sdk min:16, default 21
